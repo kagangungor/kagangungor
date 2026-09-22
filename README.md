@@ -8,9 +8,12 @@ I am a software developer specializing in high-performance desktop applications,
 
 A completely local, zero-telemetry **open-source push-to-talk dictation app** built for Windows 11 and tuned for Turkish dictation.
 
-- ⚡ **whisper.cpp & CUDA Acceleration:** Near-instant dictation in seconds.
-- 🔒 **100% Offline & Private:** Audio is processed entirely on-device and never touches the cloud.
-- 🎯 **Silero VAD Integration:** Silence skipping and custom hallucination filters.
+- ⚡ **In-Process Whisper.net & CUDA Acceleration:** Near-instant local dictation with native GPU acceleration and automatic idle memory management.
+- ⚙️ **Modern WPF Settings Interface:** Comprehensive multi-tab settings panel for real-time model downloading, device selection, and customization.
+- 📖 **Custom Jargon Dictionary & Text Normalization:** Phonetic dictionary mappings and intelligent Turkish text normalization (capitalization, punctuation, and stutter filter).
+- 🤖 **Context-Aware LLM Modes:** Foreground application detection adapting transcription personas dynamically with hardware-backed DPAPI key protection.
+- 🔒 **100% Offline & Private:** Audio processing happens entirely on-device with zero telemetry.
+- 🎯 **Silero VAD & Hallucination Suppression:** Precision voice activity detection and custom phantom subtitle filters.
 
 👉 **[Explore the Repository & Download](https://github.com/kagangungor/TRWhisper)**
 
@@ -21,7 +24,8 @@ A completely local, zero-telemetry **open-source push-to-talk dictation app** bu
 | Category | Tools & Technologies |
 |---|---|
 | **Languages & Frameworks** | C#, .NET 9, WPF, Win32 API, C++, Python |
-| **AI & Machine Learning** | Whisper (whisper.cpp), CUDA, Local AI, VAD, LLM APIs |
+| **AI & Machine Learning** | Whisper (Whisper.net / whisper.cpp), CUDA, Silero VAD, Local AI, LLM APIs |
+| **Testing & Quality** | Unit Testing (xUnit/VSTest), UI Smoke Testing, RegEx Engine |
 | **DevOps & Tooling** | Git, GitHub Actions, Inno Setup, PowerShell, Visual Studio |
 
 ---
