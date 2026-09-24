@@ -17,17 +17,18 @@ I build high-performance, zero-telemetry native desktop applications, low-latenc
 
 A completely local, privacy-first **push-to-talk voice dictation application** built for Windows 11 and tuned for Turkish dictation — an offline, zero-telemetry alternative to cloud dictation tools.
 
-> 🆕 **Latest: [v2.1.0](https://github.com/kagangungor/TRWhisper/releases/tag/v2.1.0)** — one-click & automatic backups, a daily API call cap for cloud LLM cost control, and API key rotation reminders.
+> 🆕 **Latest: [v2.2.0](https://github.com/kagangungor/TRWhisper/releases/tag/v2.2.0)** — spoken punctuation, a fast dictation-language switch, an AI Assistant mode, Groq / DeepSeek / Claude support, a searchable dictation history, and a round of security fixes.
 
 - ⚡ **In-Process Whisper.net & CUDA 13 Acceleration:** Near-instant local transcription (~2–3s on GPU) with in-process Whisper.net engine and automatic idle VRAM cleanup.
 - 🌊 **Real-Time Live Streaming Preview:** Words stream dynamically into a floating overlay pill with real-time waveform visualization before final transcription.
-- 🤖 **Context-Aware Personas & Foreground App Detection:** Detects active windows (VS Code, Visual Studio, Outlook, Windows Terminal, etc.) and auto-switches LLM post-processing personas (Clean, Code, Email, Bulleted Summary, Translation).
+- 🤖 **Context-Aware Personas & Foreground App Detection:** Detects active windows (VS Code, Visual Studio, Outlook, Windows Terminal, etc.) and auto-switches LLM post-processing personas (Clean, Code, Email, Bulleted Summary, Translation, AI Assistant) across Ollama, Gemini, OpenAI, Groq, DeepSeek, Claude and any OpenAI-compatible endpoint.
+- 🗣️ **Spoken Punctuation & Fast Language Switch:** Say "nokta", "virgül" or "yeni satır" to type punctuation, and cycle the dictation language (TR/EN/DE/FR/auto) with a single hotkey.
 - 📖 **Turkish Normalization & Phonetic Jargon Engine:** Rule-based normalization for spoken Turkish numbers, dates, currency, percentages, and suffix vowel harmony, paired with user-defined phonetic dictionaries.
 - 🔒 **Offline-First & DPAPI Security:** Audio never leaves the machine and there is zero telemetry; optional cloud LLM API keys are encrypted with Windows DPAPI (bound to your Windows account, custom entropy) and are never sent over plain HTTP.
 - ⌨️ **DirectType & Smart Clipboard Engine:** Seamless text insertion via Win32 `SendInput` / Unicode keystrokes or clipboard paste with automatic clipboard restoration.
 - 🎯 **Silero VAD & Hallucination Suppression:** Precision voice activity detection and custom heuristic filters for phantom subtitle suppression.
-- 💾 **Backup, Cost Control & Key Lifecycle:** ZIP backups of settings, dictionary and dictation history (API key never included), a daily cloud API call cap with block/warn modes, and API key age tracking with rotation reminders.
-- 🛡️ **Supply-Chain Integrity:** Every downloaded binary and model is verified against a pinned SHA-256 digest (fail-closed), with 152 automated unit tests guarding the codebase.
+- 💾 **Backup, History, Cost Control & Key Lifecycle:** ZIP backups of settings, dictionary and dictation history (API key never included, machine-bound settings never restored), a searchable dictation history, a daily cloud API call cap with block/warn modes, and API key age tracking with rotation reminders.
+- 🛡️ **Security & Supply-Chain Integrity:** Every downloaded binary and model is verified against a pinned SHA-256 digest (fail-closed), the VC++ runtime by its Microsoft signature, terminal pastes are forced to a single line so nothing auto-executes, and 420 automated unit tests guard the codebase.
 
 👉 **[Explore the Repository & Download Releases](https://github.com/kagangungor/TRWhisper)**
 
@@ -39,7 +40,7 @@ A completely local, privacy-first **push-to-talk voice dictation application** b
 |---|---|
 | **Core & Systems** | C#, .NET 9, C++, Win32 API (`WH_KEYBOARD_LL`, `SendInput`), Multi-threading & Async, Memory Optimization |
 | **Desktop UI / UX** | WPF (Windows Presentation Foundation), Modern XAML, Custom Floating Overlays, Windows Tray Integration |
-| **AI, Audio & ML** | Whisper.net, whisper.cpp, NVIDIA CUDA 13, Silero VAD, Local LLM Inference (Ollama), Gemini / OpenAI APIs, DPAPI Encryption |
+| **AI, Audio & ML** | Whisper.net, whisper.cpp, NVIDIA CUDA 13, Silero VAD, Local LLM Inference (Ollama), Gemini / OpenAI / Claude / Groq / DeepSeek APIs, DPAPI Encryption |
 | **Testing & Quality** | xUnit, Automated UI Smoke Testing, RegEx Processing Engines, Zero-Leak Memory Auditing |
 | **DevOps & Tooling** | Git, GitHub Releases, Inno Setup (Custom Pascal Scripting), PowerShell, Visual Studio |
 
