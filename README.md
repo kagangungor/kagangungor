@@ -78,6 +78,21 @@ A completely local, privacy-first **push-to-talk voice dictation application** b
   <a href="mailto:kagangungor@dlinemedia.com">
     <img src="https://img.shields.io/badge/Email-kagangungor@dlinemedia.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
   </a>
+  <a href="https://buymeacoffee.com/kagangungor">
+    <img src="https://img.shields.io/badge/Buy_Me_A_Coffee-FFDD00?style=flat-square&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee" />
+  </a>
 </p>
+
+---
+
+### 💖 Support My Work
+
+If you find my open-source projects useful or they saved you time, consider buying me a coffee to support continued development:
+
+<a href="https://buymeacoffee.com/kagangungor" target="_blank">
+  <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="42">
+</a>
+
+<br/><br/>
 
 ⭐️ *If you find my open-source projects useful, feel free to drop a star on the repositories!*
